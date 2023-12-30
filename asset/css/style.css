@@ -1,0 +1,74 @@
+@font-face {
+font-family: 'Post No Bills Colombo ExtraB';
+src:url("../fonts/post-no-bills/postnobillscolombo-bold.ttf");
+font-weight: 700;
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Post No Bills Colombo ExtraB';
+    overflow-x: hidden !important;
+}
+
+.demo{
+    width: 100vw !important;
+height: 100vh !important;
+background-color: black !important;
+display: flex;
+justify-content: center;
+align-items: center;
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+
+}
+h1{
+    background: linear-gradient(to right, #44ff60 20%, #daff20 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 20px;
+   -webkit-box-reflect:below 1px linear-gradient(to bottom, transparent,#0003) ;
+   text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #fff, 0 0 40px cyan ;
+/* opacity: 1 !important; */
+font-size: 80px;
+z-index: 99999 !important;
+font-weight: bold !important;
+}
+#year{
+animation: rotate 4s ease ;
+display: inline-block;
+}
+
+@keyframes rotate{
+0%{
+transform: rotate(0deg);}
+100%{
+transform: rotate(360deg);
+}
+}
+
+@media screen and (min-width:200px) and (max-width:767px)  {
+    h1{
+    font-size: 22px;
+    letter-spacing: 6px;
+
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px)  {
+    h1{
+    font-size: 50px;
+    letter-spacing: 15px;
+
+    }
+}
+@media screen and (min-width:991px) and (max-width:1100px)  {
+    h1{
+    font-size: 70px;
+    }
+}
+
